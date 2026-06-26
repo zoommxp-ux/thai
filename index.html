@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"><title>BKK Shoppers · منتجات تايلندية أصلية</title>
+<meta name="description" content="متجر BKK Shoppers لبيع منتجات التجميل والعناية والوجبات التايلندية الأصلية 100% — مكياج، عناية بالبشرة، منتجات 7-Eleven وأكثر. توصيل عبر واتساب.">
+<meta name="keywords" content="منتجات تايلندية, مكياج تايلندي, BKK Shoppers, Joji, Lemon Me, 7-Eleven تايلند, عناية بالبشرة, أصلي">
+<meta name="author" content="BKK Shoppers">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BKK Shoppers">
+<meta property="og:title" content="BKK Shoppers · منتجات تايلندية أصلية">
+<meta property="og:description" content="متجر BKK Shoppers لبيع منتجات التجميل والعناية والوجبات التايلندية الأصلية 100% — مكياج، عناية بالبشرة، منتجات 7-Eleven وأكثر. توصيل عبر واتساب.">
+<meta property="og:image" content="https://bkkshoppers.netlify.app/images/og_image.jpg">
+<meta property="og:url" content="https://bkkshoppers.netlify.app/">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BKK Shoppers · منتجات تايلندية أصلية">
+<meta name="twitter:description" content="متجر BKK Shoppers لبيع منتجات التجميل والعناية والوجبات التايلندية الأصلية 100% — مكياج، عناية بالبشرة، منتجات 7-Eleven وأكثر. توصيل عبر واتساب.">
+<meta name="twitter:image" content="https://bkkshoppers.netlify.app/images/og_image.jpg">
+<meta name="theme-color" content="#e0a020">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"><style>
+:root{--bg:#f6f8fb;--card:#ffffff;--card2:#eef3f9;--mango:#e0a020;--mango-deep:#c4881a;
+--leaf:#3d8fd6;--leaf-deep:#2d72b3;--ink:#1a2942;--mut:#5e7185;--line:#dde6f0;--wa:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',system-ui,sans-serif;background:radial-gradient(1200px 600px at 90% -10%,#e3edf8 0,transparent 55%),var(--bg);color:var(--ink);min-height:100vh;padding-bottom:60px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,rgba(255,255,255,.97),rgba(255,255,255,.88));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:12px;padding:14px 16px;max-width:1100px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}.logo-img{height:72px;width:auto;display:block}.logo-sub{font-size:12px;color:var(--mut);font-weight:700}
+.logo .mark{width:42px;height:42px;border-radius:13px;overflow:hidden;display:grid;place-items:center;background:#fff}.logo .mark img{width:100%;height:100%;object-fit:cover}
+.logo h1{font-size:18px;font-weight:900;line-height:1}.logo span{font-size:11px;color:var(--mut);font-weight:600}
+.hero{padding:30px 0 6px;text-align:center}
+.hero h2{font-size:30px;font-weight:900;letter-spacing:-.6px;line-height:1.15}.brand-title{font-size:26px;font-weight:900;color:var(--mango);letter-spacing:.5px;margin-bottom:6px;line-height:1}.hero h2 b{color:var(--mango)}
+.hero p{color:var(--mut);margin-top:8px;font-size:15px;max-width:560px;margin-inline:auto}
+
+/* Search */
+.search-wrap{padding:20px 0 4px}
+.search-box{display:flex;align-items:center;gap:10px;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 18px;transition:.2s}
+.search-box:focus-within{border-color:var(--mango);box-shadow:0 0 0 3px rgba(224,160,32,.15)}
+.search-box span{font-size:20px;flex-shrink:0;color:var(--mut)}
+.search-box input{flex:1;background:none;border:none;outline:none;color:var(--ink);font-family:inherit;font-size:16px;font-weight:600}
+.search-box input::placeholder{color:var(--mut);font-weight:400}
+.search-clear{background:none;border:none;color:var(--mut);cursor:pointer;font-size:20px;padding:0;display:none;line-height:1;transition:.15s}
+.search-clear:hover{color:var(--ink)}
+.search-meta{display:flex;align-items:center;justify-content:space-between;min-height:28px;padding:6px 2px 0}
+.search-count{font-size:13px;color:var(--mut);font-weight:600}
+
+/* Search results grid */
+.results-wrap{display:none;padding-bottom:10px}
+.results-wrap.show{display:block}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;padding:10px 0 6px}
+.rprod{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:.2s}
+.rprod:hover{transform:translateY(-3px);border-color:var(--mango);box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.rprod .ph{aspect-ratio:1/1;background:#fff;overflow:hidden}
+.rprod .ph img{width:100%;height:100%;object-fit:cover}
+.rprod .info{padding:11px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.rprod .nm{font-weight:700;font-size:13.5px;line-height:1.35;color:var(--ink)}
+.rprod .vr{color:var(--mut);font-size:11.5px;font-weight:600}
+.rprod .sec-badge{margin-top:auto;padding-top:8px;display:inline-block;font-size:10.5px;font-weight:800;color:var(--leaf)}
+.no-results{text-align:center;color:var(--mut);padding:40px 20px;font-weight:600;grid-column:1/-1}
+.no-results .em{font-size:40px;margin-bottom:8px}
+
+.sects{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:14px;padding:24px 0}
+.sect{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 14px;transition:.2s;overflow:hidden}
+.sect:hover{transform:translateY(-4px);border-color:var(--mango);box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.sect .ic{width:66px;height:66px;border-radius:18px;background:#15151f;display:grid;place-items:center}
+.sect .ic svg{width:34px;height:34px;stroke-width:2.1;filter:drop-shadow(0 0 5px currentColor)}
+.sect h3{color:var(--ink);font-size:15.5px;font-weight:800;line-height:1.3}
+.sect .cnt{color:var(--mut);font-size:11.5px;font-weight:700}
+.sect.feat .ic{background:#15151f}
+.tag{position:absolute;top:10px;left:10px;background:var(--mango);color:#3a2600;font-size:9.5px;font-weight:900;padding:3px 8px;border-radius:999px}
+.sects-label{font-size:14px;font-weight:800;color:var(--mut);padding:6px 0 0}
+footer{text-align:center;color:var(--mut);font-size:12px;padding:18px 0}
+@media(max-width:520px){.hero h2{font-size:24px}.sects{grid-template-columns:repeat(2,1fr);gap:11px}.sect{padding:20px 10px}.sect .ic{width:58px;height:58px;font-size:28px}.sect h3{font-size:14px}.results-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+
+/* ===== CONTACT MENU ===== */
+.contact-box{position:relative}
+.contact-btn{display:flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:10px 14px;border-radius:13px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit}
+.contact-btn:hover{border-color:var(--mango)}
+.contact-menu{position:absolute;top:calc(100% + 8px);left:0;min-width:220px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:0 14px 36px rgba(0,0,0,.45);opacity:0;visibility:hidden;transform:translateY(-8px);transition:.2s;z-index:60}
+.contact-menu.show{opacity:1;visibility:visible;transform:translateY(0)}
+.contact-menu a{display:flex;align-items:center;gap:11px;padding:12px 13px;border-radius:11px;text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;transition:.15s}
+.contact-menu a:hover{background:var(--card2)}
+.contact-menu a .mi{font-size:20px;width:24px;text-align:center;flex-shrink:0}
+.contact-menu a .mt{display:flex;flex-direction:column;gap:1px}
+.contact-menu a .mt small{font-size:11px;color:var(--mut);font-weight:600}
+.contact-menu .divider{height:1px;background:var(--line);margin:5px 6px}
+.menu-overlay{position:fixed;inset:0;z-index:55;display:none}
+.menu-overlay.show{display:block}
+
+
+@media(max-width:520px){
+ .bar{gap:8px;padding:12px 12px}
+ .contact-btn,#cartLink{padding:9px 11px;font-size:13px}
+ .logo span{display:none}
+ .contact-menu{min-width:200px}
+}
+
+
+.howto-btn{display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center;text-decoration:none;
+background:linear-gradient(135deg,var(--mango),var(--mango-deep));color:#fff;font-weight:900;font-size:16px;
+padding:15px 20px;border-radius:16px;margin:0 0 18px;box-shadow:0 8px 22px rgba(224,160,32,.35);
+transition:.2s;border:none}
+.howto-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(224,160,32,.45)}
+.howto-btn span{font-size:12px;font-weight:600;opacity:.92}
+</style></head><body>
+<header><div class="bar"><a class="logo" href="index.html"><img class="logo-img" src="images/logo_header.png" alt="BKK Shoppers" loading="eager"><span class="logo-sub">منتجات أصلية</span></a>
+<div style="flex:1"></div>
+<div class="contact-box">
+<button class="contact-btn" onclick="toggleContactMenu(event)">💬 تواصل ▾</button>
+<div class="contact-menu" id="contactMenu">
+<a href="#sections" onclick="closeContactMenu();return scrollToSections(event)"><span class="mi">📂</span><span class="mt">الأقسام<small>تصفّح كل أقسام المتجر</small></span></a>
+<a href="howto.html"><span class="mi">📋</span><span class="mt">طريقة الاستخدام<small>خطوات الطلب والشحن والدفع</small></span></a>
+<div class="divider"></div>
+<div style="font-size:12px;color:var(--mut);font-weight:800;padding:8px 13px 4px">💚 خدمة العملاء — واتساب</div>
+<a href="https://wa.me/66931866636?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%F0%9F%91%8B%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" rel="noopener"><span class="mi">💬</span><span class="mt">حكيم<small>اضغطي للتواصل على واتساب</small></span></a>
+<a href="https://wa.me/66900663064?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%F0%9F%91%8B%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" rel="noopener"><span class="mi">💬</span><span class="mt">يوسف<small>اضغطي للتواصل على واتساب</small></span></a>
+<a href="https://wa.me/66645920327?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%F0%9F%91%8B%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" rel="noopener"><span class="mi">💬</span><span class="mt">لوي<small>اضغطي للتواصل على واتساب</small></span></a>
+<a href="https://chat.whatsapp.com/JgQGPwNdYjVKJEPobk4VoL" target="_blank" rel="noopener"><span class="mi">👥</span><span class="mt">جروب العملاء<small>انضمّي لعروضنا الحصرية</small></span></a>
+<div class="divider"></div>
+<a href="admin.html"><span class="mi">🔐</span><span class="mt">دخول الأدمن<small>لإدارة المنتجات — للموظّفين فقط</small></span></a>
+</div>
+</div>
+<a href="favorites.html" id="favLink" style="position:relative;display:flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:10px 14px;border-radius:13px;font-weight:700;font-size:14px;text-decoration:none">❤️ المفضلة<span id="favBadge" style="display:none;position:absolute;top:-7px;left:-7px;background:#ff5050;color:#fff;min-width:21px;height:21px;border-radius:11px;font-size:12px;font-weight:900;place-items:center;padding:0 5px"></span></a>
+<a href="cart.html" id="cartLink" style="position:relative;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:10px 14px;border-radius:13px;font-weight:700;font-size:14px;text-decoration:none">🛒 السلّة<span id="cartCountTxt" style="font-weight:900;color:var(--mango)"></span><span id="cartBadge" style="display:none;position:absolute;top:-7px;left:-7px;background:var(--mango);color:#3a2600;min-width:21px;height:21px;border-radius:11px;font-size:12px;font-weight:900;display:grid;place-items:center;padding:0 5px"></span></a>
+</div></header>
+<div class="wrap">
+<div class="hero"><div class="brand-title">BKK Shoppers</div><h2>تسوّق حسب <b>القسم</b></h2><p>اختر القسم لتصفّح منتجاته. أضِفنا أقسامًا جديدة باستمرار.</p></div>
+<a href="howto.html" class="howto-btn">📋 طريقة الطلب والشحن<span>اعرف خطوات الطلب والشحن والدفع قبل ما تبدأ</span></a>
+
+<div class="search-wrap">
+  <div class="search-box">
+    <span>🔍</span>
+    <input type="text" id="searchInput" placeholder="ابحث عن أي منتج..." oninput="handleSearch(this.value)" autocomplete="off">
+    <button class="search-clear" id="searchClear" onclick="clearSearch()">✕</button>
+  </div>
+  <div class="search-meta">
+    <span class="search-count" id="searchCount"></span>
+  </div>
+</div>
+
+<div class="results-wrap" id="resultsWrap">
+  <div class="results-grid" id="resultsGrid"></div>
+</div>
+
+<div id="sectionsWrap">
+<div class="sects">
+<a class="sect" href="makeup.html"><div class="ic" style="color:#ff5db1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg></div>
+<h3>المكياج</h3><span class="cnt">126 منتج</span></a>
+<a class="sect" href="skincare.html"><div class="ic" style="color:#45e6f5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+<h3>العناية بالبشرة</h3><span class="cnt">139 منتج</span></a>
+<a class="sect" href="hair.html"><div class="ic" style="color:#b388ff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
+<h3>العناية بالشعر</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="body.html"><div class="ic" style="color:#34f5c5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 4.8 7 3.6c-.29 1.2-1.15 2.6-2.29 3.5S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A11 11 0 0 0 14 3.6c.44 1.76 1.59 3.1 2.84 4.1S19 9.96 19 11.4c0 2.42-1.79 4.4-4 4.4-.49 0-.97-.1-1.42-.27"/></svg></div>
+<h3>العناية بالجسم</h3><span class="cnt">15 منتج</span></a>
+<a class="sect" href="perfume.html"><div class="ic" style="color:#c79bff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="4" width="5" height="4" rx="1"/><path d="M19 8l2 2v10a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V10l2-2"/><path d="M13 13h8"/><path d="M4 4h.01M8 6h.01M4 8h.01M8 10h.01M4 12h.01"/></svg></div>
+<h3>العطور</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="nails.html"><div class="ic" style="color:#ff6ec7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4V3h4v1"/><path d="M9 8V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect x="7" y="8" width="10" height="13" rx="1.5"/><path d="M7 13h10"/></svg></div>
+<h3>العناية بالأظافر</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="men.html"><div class="ic" style="color:#4d9dff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="6" rx="1"/><path d="M9 9c-1.5 1.5-2 3.5-2 6 0 3 2.2 5 5 5s5-2 5-5c0-2.5-.5-4.5-2-6"/><path d="M10 15h4"/></svg></div>
+<h3>منتجات الرجال</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="tools.html"><div class="ic" style="color:#9fd0ff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v6"/><path d="M9 21h6"/></svg></div>
+<h3>أدوات وإكسسوارات التجميل</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="organic.html"><div class="ic" style="color:#6ef07a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+<h3>المنتجات الطبيعية والعضوية</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="sun.html"><div class="ic" style="color:#ffd54a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></div>
+<h3>الحماية من الشمس</h3><span class="cnt">قريبًا</span></a>
+<a class="sect feat" href="bestseller.html"><span class="tag">🔥 مميّز</span><div class="ic" style="color:#ff8a3d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+<h3>الأكثر مبيعًا</h3><span class="cnt">قريبًا</span></a>
+<a class="sect feat" href="new.html"><span class="tag">جديد</span><div class="ic" style="color:#5ff0c8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3z"/></svg></div>
+<h3>وصل حديثًا</h3><span class="cnt">قريبًا</span></a>
+<a class="sect feat" href="offers.html"><span class="tag">خصم</span><div class="ic" style="color:#ff6b6b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9 3 11 5 12 8c1-3 3-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></div>
+<h3>العروض والباقات</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="gifts.html"><div class="ic" style="color:#ff7a8a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8c1.5-3 3-5 4.5-5a2.5 2.5 0 0 1 0 5M12 8c-1.5-3-3-5-4.5-5a2.5 2.5 0 0 0 0 5"/><path d="M4 8h16v4H4z"/><path d="M12 12v9"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></div>
+<h3>الهدايا والصناديق</h3><span class="cnt">قريبًا</span></a>
+<a class="sect feat" href="trend.html"><span class="tag">ترند</span><div class="ic" style="color:#aef34d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
+<h3>منتجات ترند</h3><span class="cnt">قريبًا</span></a>
+<a class="sect" href="seven.html"><div class="ic" style="color:#4dffa6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M4 7l1.4-3a1 1 0 0 1 .9-.6h11.4a1 1 0 0 1 .9.6L20 7"/><path d="M4 7v2.5a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0V7"/><path d="M5 21v-7h14v7"/></svg></div>
+<h3>منتجات 7-Eleven</h3><span class="cnt">151 منتج</span></a>
+</div>
+</div>
+</div>
+<footer><a href="about.html" style="color:var(--mango);text-decoration:none;font-weight:700">من نحن</a> · الأسعار بالباث التايلندي (THB) · BKK Shoppers</footer>
+
+<script>
+const SECTION_LABELS={"skincare":"🧴 العناية بالبشرة","makeup":"💄 المكياج","body":"🧼 العناية بالجسم","seven":"🏪 منتجات 7-Eleven","men":"🧔 منتجات رجالية"};
+let ALL_PRODUCTS=[];
+
+let searchQuery='';
+const __PAGE2SEC__={'makeup.html':'makeup','skincare.html':'skincare','body.html':'body','men.html':'men','seven.html':'seven'};
+fetch('/api/products',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).catch(function(){return fetch('products.json',{cache:'no-store'}).then(function(r){return r.json();});}).then(function(all){
+  ALL_PRODUCTS=all.filter(function(p){return !p.hidden;});
+  var inp=document.getElementById('searchInput');
+  if(inp){inp.placeholder='ابحث عن أي منتج... ('+ALL_PRODUCTS.length+' منتج)';}
+  var byS={};ALL_PRODUCTS.forEach(function(p){byS[p.section]=(byS[p.section]||0)+1;});
+  document.querySelectorAll('a.sect').forEach(function(aE){
+    var sec=__PAGE2SEC__[(aE.getAttribute('href')||'').trim()];if(!sec)return;
+    var c=aE.querySelector('.cnt');if(c)c.textContent=(byS[sec]||0)+' منتج';
+  });
+  if(searchQuery)renderResults();
+}).catch(function(){});
+// set dynamic product count in search placeholder
+(function(){var inp=document.getElementById('searchInput');if(inp){inp.placeholder='ابحث عن أي منتج... ('+ALL_PRODUCTS.length+' منتج)';}})();
+
+
+function handleSearch(val){
+  searchQuery=val.trim().toLowerCase();
+  const clr=document.getElementById('searchClear');
+  const rw=document.getElementById('resultsWrap');
+  const sw=document.getElementById('sectionsWrap');
+  if(clr) clr.style.display=searchQuery?'block':'none';
+  if(searchQuery){
+    rw.classList.add('show');
+    sw.style.display='none';
+    renderResults();
+  } else {
+    rw.classList.remove('show');
+    sw.style.display='';
+    document.getElementById('searchCount').textContent='';
+  }
+}
+
+function renderResults(){
+  const filtered=ALL_PRODUCTS.filter(p=>
+    (p.name+' '+p.variant+' '+(p.spec||'')).toLowerCase().includes(searchQuery)
+  );
+  const cnt=document.getElementById('searchCount');
+  const grid=document.getElementById('resultsGrid');
+  cnt.textContent=filtered.length>0?filtered.length+' نتيجة من '+ALL_PRODUCTS.length+' منتج':'';
+  if(!filtered.length){
+    grid.innerHTML=`<div class="no-results"><div class="em">🔍</div>لا توجد نتائج لـ "${searchQuery}"</div>`;
+    return;
+  }
+  grid.innerHTML=filtered.map(p=>{
+    const label=SECTION_LABELS[p.section]||'';
+    return `<a class="rprod" href="${p.page}">
+      <div class="ph"><img src="${p.img}" loading="lazy" alt="${p.name}"></div>
+      <div class="info">
+        <div class="nm">${p.name}</div>
+        <div class="vr">${p.variant}</div>
+        <div class="sec-badge">${label}</div>
+      </div>
+    </a>`;
+  }).join('');
+}
+
+function clearSearch(){
+  searchQuery='';
+  const inp=document.getElementById('searchInput');
+  const clr=document.getElementById('searchClear');
+  const cnt=document.getElementById('searchCount');
+  const rw=document.getElementById('resultsWrap');
+  const sw=document.getElementById('sectionsWrap');
+  if(inp) inp.value='';
+  if(clr) clr.style.display='none';
+  if(cnt) cnt.textContent='';
+  rw.classList.remove('show');
+  sw.style.display='';
+}
+</script>
+<script>
+(function(){
+  try{
+    var g=JSON.parse(localStorage.getItem("thaistore_cart_global")||"{}");
+    var n=Object.values(g).reduce(function(s,it){return s+it.qty;},0);
+    var b=document.getElementById("cartBadge");
+    if(b&&n>0){b.textContent=n;b.style.display="grid";}
+    var t=document.getElementById("cartCountTxt");
+    if(t)t.textContent=n>0?(" "+n+" قطعة"):"";
+  }catch(e){}
+  try{
+    var f=JSON.parse(localStorage.getItem("thaistore_favorites")||"{}");
+    var fn=Object.keys(f).length;
+    var fb=document.getElementById("favBadge");
+    if(fb&&fn>0){fb.textContent=fn;fb.style.display="grid";}
+  }catch(e){}
+})();
+</script>
+<script>
+function toggleContactMenu(e){
+  e.stopPropagation();
+  var m=document.getElementById('contactMenu');
+  m.classList.toggle('show');
+}
+function closeContactMenu(){
+  var m=document.getElementById('contactMenu');
+  if(m)m.classList.remove('show');
+}
+function scrollToSections(e){
+  e.preventDefault();
+  var sw=document.getElementById('sectionsWrap');
+  if(sw){
+    // if search active, clear it so sections are visible
+    if(typeof clearSearch==='function' && sw.style.display==='none'){clearSearch();}
+    sw.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  return false;
+}
+document.addEventListener('click',function(e){
+  var box=document.querySelector('.contact-box');
+  if(box && !box.contains(e.target)){closeContactMenu();}
+});
+</script>
+
+</body></html>
